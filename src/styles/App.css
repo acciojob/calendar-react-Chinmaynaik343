@@ -1,12 +1,57 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.calendar {
+  width: 420px;
+  max-width: 95%;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.calendar h1 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.controls select,
+.controls input {
+  padding: 6px;
+}
+
+#year {
+  padding: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#calendarTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendarTable th,
+#calendarTable td {
+  border: 1px solid #ccc;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+#calendarTable th {
+  background-color: #f0f0f0;
+}
+
+#calendarTable td {
+  height: 20px;
 }
